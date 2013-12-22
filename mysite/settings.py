@@ -1,8 +1,10 @@
 # Django settings for mysite project.
 import os
+import os.path
 
 # Sets the project path as a variable to be used below
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
+PROJECT_DIR = os.path.dirname(__file__) # this is not Django setting.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -112,7 +114,7 @@ ROOT_URLCONF = 'mysite.urls'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
-   os.path.join(PROJECT_ROOT, 'templates'),
+    os.path.join(PROJECT_DIR, "templates"),
 )
 
 INSTALLED_APPS = (
