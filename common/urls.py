@@ -4,10 +4,10 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
 
-      url(r'^$', 'app.views.common.home', name='home'),
-      url(r'^about/$', 'app.views.common.about', name='about'),
-      url(r'^projects/$', 'app.views.common.projects', name='projects'),
-      url(r'^blog/$', 'app.views.common.about', name='blog'),
-      url(r'^contact/$', 'app.views.common.contact', name='contact'),
+      url(r'^$', 'common.views.home', name='home'),
+      url(r'^about/$', 'common.views.about', name='about'),
+      url(r'^projects/$', 'common.views.projects', name='projects'),
+      url(r'^blog/$', 'common.views.about', name='blog'),
+      url(r'^contact/$', 'common.views.contact', name='contact'),
 
 )

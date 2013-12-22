@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Q
 from datetime import *
-from app.forms import *
-from app.models import *
+#from app.forms import *
+from common.models import *
 
 def home(request):
    context = {}

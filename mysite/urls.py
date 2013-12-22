@@ -4,6 +4,6 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     url(r'^mysite/', include('common.urls')),
-    url(r'^$', 'app.views.common.home', name='home'),
+    url(r'^$', 'common.views.home', name='home'),
 
 )
